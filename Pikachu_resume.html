@@ -14,7 +14,7 @@
 				color: #FFDD73;
 				margin-top: 10px;
 			}
-			nav{
+			ul#nav{
 				background: black;
 				height: 48px;
 				text-transform: uppercase;
@@ -22,19 +22,21 @@
 				word-spacing: 20px;
 				font-size: 11px;
 				width: auto;
+				margin: 0;
+				padding: 0;
 
 			}
 			div#intro{
 				text-align: center;
 				font-size: 13px;
 				background-color: #2D2E2C;
-				background: url("images/night_landscape.jpg");
+				background-image: url("images/night_landscape.jpg");
 				background-repeat: no-repeat;
-				background-position: fixed;
+				background-attachment: fixed;
 				overflow: hidden;
 				width: auto;
 				text-align: center;
-				height: 350px;
+				height: 450px;
 			}
 			div#intro #name{
 				font-size: 50px;
@@ -44,6 +46,40 @@
 			div#intro p{
 				color: white;
 			}
+
+			div#interests{
+				background-color: #20211F;
+				height: 550px;
+			}
+
+			div#level_elements{
+				display: inline-block;
+				transform: translateY(24%);
+				margin-left: 37px;
+			}
+
+			div#interests #floating_pikachu{
+				margin: 0;
+				padding: 0;
+				float: left;
+				display: inline-block;
+				top: -16px;
+				position: relative;
+			}
+
+			div#interests #interests_list{
+				color: white;
+				list-style: circle;
+				display: inline-block;
+			}
+			div#interests_list p{
+				font-weight: bolder;
+				margin: 0;
+				padding: 0;
+				line-height: 45px;
+				font-size: 20px;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -51,24 +87,28 @@
 			<ul id="nav">
 				<li>Home</li>
 				<li>Intro</li>
-				<li>Favorites</li>
+				<li>Interests</li>
 				<li>Abilities</li>
 				<li>Friends</li>
 			</ul>
 		</nav>
 		<div id="intro">
-			<!-- <p><img src="images/floating.png" alt=""></p> -->
 			<p id="name">Pikachu</p>
 			<p>I'm an Electric-type Pokemon.</p>
 			<p>I level up with high friendship and will evolve into Raichu when exposed to a Thunder Stone.</p>
 		</div>
-		<div id="favorites">
-			<p><img src="images/floating.png" alt=""></p>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+		<div id="interests">
+			<div id="level_elements">
+				<p id="floating_pikachu"><img src="images/floating.png" alt=""></p>
+				<div id="interests_list">
+					<p>Pikachu's Interests</p>
+					<li>Ketchup</li>
+					<li>Ash</li>
+					<li>Berries</li>
+					<li>Forested areas</li>
+					<li>Travelling in groups</li>	
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
