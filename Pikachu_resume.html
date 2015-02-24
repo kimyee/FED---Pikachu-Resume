@@ -14,6 +14,17 @@
 				color: #FFDD73;
 				margin-top: 10px;
 			}
+
+			ul#nav a:link,
+			ul#nav a:visited{
+				color: #FFDD73;
+				text-decoration: none;
+			}
+
+			ul#nav a:hover{
+				color: white;
+			}
+
 			ul#nav{
 				background: black;
 				height: 48px;
@@ -24,10 +35,9 @@
 				width: auto;
 				margin: 0;
 				padding: 0;
-
 			}
+
 			div#intro{
-				text-align: center;
 				font-size: 13px;
 				background-color: #2D2E2C;
 				background-image: url("images/night_landscape.jpg");
@@ -72,17 +82,42 @@
 				width: 60%;
 			}
 			
+			div#contact{
+				height: 300px;
+				background-color: #2E2E2E;
+			}
 
+			div#contact img{
+				width: 20%;
+				float: left;
+			}
+			div#facebook {
+				width: 73%;
+				position: absolute;
+				transform: translateX(99%);
+			}
+			div#twitter {
+				width: 56%;
+				position: absolute;
+				transform: translateX(79%);
+				margin-top: 2%;
+			}
+			div#instagram {
+				width: 55%;
+				position: absolute;
+				transform: translateX(22%);
+				margin-top: 2%;
+			}
 		</style>
 	</head>
 	<body>
 		<nav>
 			<ul id="nav">
 				<li>Home</li>
-				<li>Intro</li>
-				<li>Interests</li>
-				<li>Abilities</li>
-				<li>Friends</li>
+				<li><a href="#intro">Intro</a></li>
+				<li><a href="#interests">Interests</a></li>
+				<li><a href="#abilities">Abilities</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<div id="intro">
@@ -106,13 +141,20 @@
 					<p>
 						Danish I love halvah cake jelly lemon drops. Pastry sesame snaps lemon drops croissant gummi bears halvah caramels. Caramels I love jelly. I love donut gummies marzipan chupa chups caramels. Lemon drops chocolate cake cake sugar plum tart biscuit. Marzipan I love candy canes. Ice cream apple pie jelly-o. Cake I love I love gummies pie halvah pie carrot cake. Danish cotton candy soufflé cotton candy pie jelly-o.
 					</p>
-					<!-- <li>Ketchup</li>
-					<li>Ash</li>
-					<li>Berries</li>
-					<li>Forested areas</li>
-					<li>Travelling in groups</li>	 -->
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+		<div id="abilities">
+			<p></p>
+		</div>
+		<div id="contact">
+			<div id="instagram">
+				<a href="https://instagram.com/whereispikachu/"><img src="images/instagram.png" alt=""></a>
+			</div>
+			<div id="twitter">
+				<a href="https://twitter.com/pikachu_"><img src="images/twitter.png" alt=""></a>
+			</div>
+			<div id="facebook">
+				<a href="https://www.facebook.com/PikachuNumber25"><img src="images/facebook.png" alt=""></a>
+			</div>
+		</div>
